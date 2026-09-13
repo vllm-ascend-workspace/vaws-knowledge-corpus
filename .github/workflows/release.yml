@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install fixed knowledge engine
-        run: python -m pip install 'vaws-knowledge @ git+https://github.com/vllm-ascend-workspace/vaws-knowledge@195a1a95924297de5c9ae2accba1e12eb8acdb20'
+        run: python -m pip install 'vaws-knowledge @ git+https://github.com/vllm-ascend-workspace/vaws-knowledge@cf5824dff7bc21b783ce6e12c605d7530b8ef651'
       - name: Build dense OVPack from this commit on CPU
         run: >-
           python -I -m vaws_knowledge distribution build-release
